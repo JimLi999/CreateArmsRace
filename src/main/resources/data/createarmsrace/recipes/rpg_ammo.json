@@ -14,7 +14,7 @@
       "tag": "forge:plates/aluminum"
     },
     "R": {
-      "tag": "minecraft:firework_rocket"
+      "item": "minecraft:firework_rocket"
     }
   },
   "result": {
