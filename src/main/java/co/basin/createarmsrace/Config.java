@@ -12,21 +12,21 @@ import java.util.stream.Collectors;
 public class Config
 {
     public static final String[] weapon_types = {
-            "m95", "ai_awp", "scar_h", "hk_g3",
-            "db_long", "db_short", "m249", "sks_tactical",
+            "m95", "ai_awp", "scar_h", "scar_l", "hk_g3", "hk416d", "aug",
+            "db_long", "db_short", "m249", "sks_tactical", "mk14",
             "rpk", "deagle", "m16a1", "deagle_golden",
             "ak47", "vector45", "ump45", "m16a4",
-            "m4a1", "aa12", "rpg7", "hk_mp5a5",
-            "cz75", "uzi", "glock_17"
+            "m4a1", "aa12", "rpg7", "m320", "hk_mp5a5",
+            "cz75", "uzi", "glock_17", "p320"
     };
 
     public static final String[] firing_modes = {
-            "SEMI", "SEMI", "SEMI", "SEMI",
-            "SEMI", "BURST", "AUTO", "SEMI",
+            "SEMI", "SEMI", "SEMI", "SEMI", "SEMI", "AUTO", "AUTO",
+            "SEMI", "BURST", "AUTO", "SEMI", "SEMI",
             "AUTO", "SEMI", "AUTO", "SEMI",
             "AUTO", "AUTO", "AUTO", "BURST",
-            "AUTO", "SEMI", "SEMI", "AUTO",
-            "AUTO", "AUTO", "SEMI",
+            "AUTO", "SEMI", "SEMI", "SEMI", "AUTO",
+            "AUTO", "AUTO", "SEMI", "SEMI",
     };
 
     public static final String[] ammo_types = {
@@ -41,8 +41,9 @@ public class Config
             "extended_mag_2", "extended_mag_3", "grip_magpul_afg_2", "grip_vertical_talon",
             "light_extended_mag_1", "light_extended_mag_2", "light_extended_mag_3", "muzzle_brake_cthulhu",
             "muzzle_brake_cyclone_d2", "muzzle_brake_pioneer", "muzzle_brake_trex", "muzzle_compensator_trident",
-            "muzzle_silence_mirage", "muzzle_silence_phantom_s1", "oem_stock_heavy", "oem_stock_light",
-            "oem_stock_tactical", "scope_acog_ta31", "scope_elcan_4x", "scope_lpvo_1_6",
+            "muzzle_silence_mirage", "muzzle_silence_phantom_s1", "muzzle_silence_ursus", "muzzle_silence_ptilopsis","muzzle_silence_knight_qd",
+            "oem_stock_heavy", "oem_stock_light", "oem_stock_tactical",
+            "scope_acog_ta31", "scope_elcan_4x", "scope_lpvo_1_6",
             "scope_retro_2x", "scope_standard_8x", "sight_552", "sight_coyote",
             "sight_exp3", "sight_rmr_dot", "sight_sro_dot", "sight_t1",
             "sight_t2", "sight_uh1", "sniper_extended_mag_1", "sniper_extended_mag_2",
@@ -51,12 +52,12 @@ public class Config
 
     private static final int[] DEFAULT_RESEARCH_TIMES = {
             // Weapons
-            245000, 204800, 155623, 154770,
-            141512, 141512, 114073, 113512,
+            245000, 204800, 155623, 155623, 154770, 154770, 155623,
+            141512, 141512, 114073, 113512, 113512,
             105800, 105800, 102152, 99331,
             96800, 95207, 90506, 84050,
-            83809, 80000, 80000, 77356,
-            74756, 64800, 31250,
+            83809, 80000, 80000, 80000, 77356,
+            74756, 64800, 31250, 75056,
 
             // Ammo
             13417, 7454, 1000000, 3750,
@@ -66,12 +67,12 @@ public class Config
     };
 
     public static final String[] SELECTION_DISPLAY_NAMES = {
-            "M95", "AWM", "SCAR-H Rifle", "HK G3 Rifle",
-            "DB-4 Ursus", "DB-2 Durin", "M249 MG", "Sks Tactical",
+            "M95", "AWM", "SCAR-H Rifle", "SCAR-L Rifle", "HK G3 Rifle", "HK-416D Rifle", "AUG Rifle",
+            "DB-4 Ursus", "DB-2 Durin", "M249 MG", "Sks Tactical", "MK14 EBR",
             "RPK", "Deagle 50", "M16A1 Rifle", "Gold Deagle",
             "AKM", "Vector SMG", "UMP45 SMG", "M16A4 Rifle",
-            "M4A1 Carbine", "AA12 Shotgun", "RPG-7", "HK-MP5A5",
-            "CZ 75", "UZI", "Glock 17",
+            "M4A1 Carbine", "AA12 Shotgun", "RPG-7", "M320", "HK-MP5A5",
+            "CZ 75", "UZI", "Glock 17", "P320",
 
             "9mm", "12 Gauge", ".30-06 SF", ".45 ACP",
             "4.6mm AP", ".50 AE", ".50 BMG", "5.8mm DBP87",
@@ -79,9 +80,18 @@ public class Config
             "5.56x45mm", "7.62x25mm", "7.62x39mm", "7.62x54mm"
     };
 
-    public static final int[] gunpowder_amounts = { 1, 2, 1, 1, 1, 2, 5, 1, 1, 2, 3, 2, 1, 1, 2, 1 };
+    public static final int[] gunpowder_amounts = {
+              1, 2, 1, 1,
+              1, 2, 5, 1,
+              1, 2, 3, 2,
+              1, 1, 2, 1
+     };
     // Recipes that craft 0 are skipped; Mostly because they aren't used in tacz yet;
-    public static final int[] ammo_amounts =      { 8, 2, 0, 6, 0, 2, 1, 0, 0, 4, 2, 3, 7, 0, 5, 0 };
+    public static final int[] ammo_amounts = {
+              8, 2, 0, 6,
+              0, 2, 1, 0,
+              0, 4, 2, 3,
+              7, 0, 5, 0 };
 
     public static final String[] researchables = createResearchables();
 
