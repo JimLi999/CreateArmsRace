@@ -38,7 +38,8 @@ public class Config
 
     public static final String[] attachment_types = {
             "bayonet_6h3", "bayonet_m9", "deagle_golden_long_barrel", "extended_mag_1",
-            "extended_mag_2", "extended_mag_3", "grip_magpul_afg_2", "grip_vertical_talon",
+            "extended_mag_2", "extended_mag_3",
+            "grip_magpul_afg_2", "grip_vertical_talon", "grip_vertical_military", "grip_vertical_ranger",
             "light_extended_mag_1", "light_extended_mag_2", "light_extended_mag_3", "muzzle_brake_cthulhu",
             "muzzle_brake_cyclone_d2", "muzzle_brake_pioneer", "muzzle_brake_trex", "muzzle_compensator_trident",
             "muzzle_silence_mirage", "muzzle_silence_phantom_s1", "muzzle_silence_ursus", "muzzle_silence_ptilopsis","muzzle_silence_knight_qd",
@@ -48,6 +49,7 @@ public class Config
             "sight_exp3", "sight_rmr_dot", "sight_sro_dot", "sight_t1",
             "sight_t2", "sight_uh1", "sniper_extended_mag_1", "sniper_extended_mag_2",
             "sniper_extended_mag_3", "stock_carbon_bone_c5", "stock_militech_b5", "stock_tactical_ar",
+            "ammo_mod_i","ammo_mod_hp","ammo_mod_he","ammo_mod_fmj"
     };
 
     private static final int[] DEFAULT_RESEARCH_TIMES = {
