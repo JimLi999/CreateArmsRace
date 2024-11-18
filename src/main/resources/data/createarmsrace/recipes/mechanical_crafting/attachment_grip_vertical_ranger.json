@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "tag": "forge:plates/aluminum"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "  A",
+    "  A"
+  ],
+  "result": {
+    "item": "tacz:attachment",
+    "nbt": {
+      "AttachmentId": "tacz:grip_vertical_ranger"
+    }
+  }
+}
