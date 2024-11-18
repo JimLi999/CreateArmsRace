@@ -4,7 +4,7 @@
   "pattern": [
     " A ",
     "ATA",
-    " A "
+    " R "
   ],
   "key": {
     "T": {
@@ -12,6 +12,9 @@
     },
     "A": {
       "tag": "forge:plates/aluminum"
+    },
+    "R": {
+      "tag": "minecraft:firework_rocket"
     }
   },
   "result": {
