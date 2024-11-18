@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "tag": "forge:plates/aluminum"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "pattern": [
+    " A ",
+    "AFA",
+    "AAA"
+  ],
+  "result": {
+    "item": "tacz:attachment",
+    "nbt": {
+      "AttachmentId": "tacz:ammo_mod_he"
+    }
+  }
+}
