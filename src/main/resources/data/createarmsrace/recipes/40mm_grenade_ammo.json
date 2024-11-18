@@ -4,7 +4,7 @@
   "pattern": [
     " A ",
     "ATA",
-    "AAA"
+    "APA"
   ],
   "key": {
     "T": {
@@ -12,6 +12,9 @@
     },
     "A": {
       "tag": "forge:plates/aluminum"
+    },
+    "P": {
+      "item": "minecraft:gunpowder"
     }
   },
   "result": {
