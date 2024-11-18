@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "tag": "forge:plates/aluminum"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "pattern": [
+    "A A",
+    "ASA",
+    "AAA"
+  ],
+  "result": {
+    "item": "tacz:attachment",
+    "nbt": {
+      "AttachmentId": "tacz:ammo_mod_hp"
+    }
+  }
+}
