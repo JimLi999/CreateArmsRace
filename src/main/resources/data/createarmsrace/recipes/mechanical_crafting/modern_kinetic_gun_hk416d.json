@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "tag": "forge:plates/aluminum"
+    },
+    "C": {
+      "item": "createarmsrace:hk416d_completed_schematic"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "pattern": [
+    " A A  ",
+    "SSSCPS",
+    "  S PS"
+  ],
+  "result": {
+    "item": "tacz:modern_kinetic_gun",
+    "nbt": {
+      "GunCurrentAmmoCount": "0",
+      "GunFireMode": "AUTO",
+      "GunId": "tacz:hk416d",
+      "HasBulletInBarrel": "0b"
+    }
+  }
+}
