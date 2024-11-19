@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "C": {
+      "item": "createarmsrace:m320_completed_schematic"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "A": {
+      "tag": "forge:plates/aluminum"
+    }
+  },
+  "pattern": [
+    "SSSCSSA",
+    " A PS A"
+  ],
+  "result": {
+    "item": "tacz:modern_kinetic_gun",
+    "nbt": {
+      "GunCurrentAmmoCount": "0",
+      "GunFireMode": "SEMI",
+      "GunId": "tacz:m320",
+      "HasBulletInBarrel": "0b"
+    }
+  }
+}
