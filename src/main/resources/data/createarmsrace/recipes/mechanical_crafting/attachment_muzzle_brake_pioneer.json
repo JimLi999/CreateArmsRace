@@ -1,6 +1,6 @@
 {
   "type": "create:mechanical_crafting",
-  "acceptMirrored": true,
+  "acceptMirrored": false,
   "key": {
     "S": {
       "tag": "forge:plates/steel"
